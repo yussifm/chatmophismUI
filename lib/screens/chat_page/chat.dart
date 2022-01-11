@@ -86,10 +86,12 @@ class _ChatViewState extends State<ChatView> {
                       begin: Alignment.topLeft,
                       end: Alignment.bottomRight,
                       colors: [
+                        Colors.grey.shade500,
                         Colors.grey.shade300,
                         Colors.grey.shade200,
                         Colors.grey.shade100,
                         Colors.grey.shade300,
+                        Colors.grey.shade500
                         
                       ],
                     ),
@@ -141,7 +143,22 @@ class _ChatViewState extends State<ChatView> {
                                     blurRadius: 15.0,
                                     spreadRadius: 1.0,
                                   )
-                                ]),
+                                ],  
+                                
+                                gradient: LinearGradient(
+                      begin: Alignment.topLeft,
+                      end: Alignment.bottomRight,
+                      colors: [
+                        Colors.grey.shade500,
+                        Colors.grey.shade300,
+                        Colors.grey.shade200,
+                        Colors.grey.shade100,
+                        Colors.grey.shade300,
+                        Colors.grey.shade500
+                        
+                      ],
+                    ),
+                                ),
                             child: Center(child: Text(name[0].toUpperCase())),
                           )),
                           Expanded(
